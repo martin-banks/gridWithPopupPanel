@@ -27,7 +27,7 @@ var celebs = [
 		"occupation": "Current job",
 		"firstJob": "First job",
 		"quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate recusandae ut impedit perspiciatis, dolore eum, voluptatem deleniti expedita nobis nesciunt qui, corrupti soluta! Unde, nemo eligendi eum, ea vel quo?"
-	}
+	},
 	
 ]
 

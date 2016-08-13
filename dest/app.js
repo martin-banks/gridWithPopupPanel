@@ -10,7 +10,6 @@
 	var buttonContainer = document.getElementById('ndi-btn-container');
 	var panelContainer = document.getElementById('ndi-panel-container');
 
-
 	function headShotTemplate(){
 		return state.celebs.map(function(celeb, index){
 			return  `
@@ -21,10 +20,9 @@
 						<div class="ndi-credentials">${celeb.occupation}</div>
 					</div>
 				</div>
-			`
+			`//end template
 		}).join('')
 	}
-
 
 	function panelTemplate(index){
 		return  `
@@ -36,25 +34,29 @@
 				</div>
 				<div id="ndiCloseBtn" class="ndi-panel-close-icon" style="background-image:url('${imagePath}nav_small_close.svg')"></div>
 			</div>
-		`
+		`//end template
 	}
-
 
 	function renderTemplate(into, content){
 		into.innerHTML = content
 	}
 
+
+
+	// render popup container with relevant content when thumbnail clicked
 	delegate('#appContainer', 'click', '.ndi-btn', ()=>{
 		let index = closest(event.target, '.ndi-btn').getAttribute('data-index');
-		console.log(index);
 		renderTemplate( panelContainer, panelTemplate(index) )
+		panelContainer.style.display = 'block'
 	} );
 
+	// render popup container with no content when closeBtn clicked
 	delegate('#appContainer', 'click', '#ndiCloseBtn', ()=>{
 		renderTemplate(panelContainer, '');
+		panelContainer.style.display = 'none'
 	} );
 
-
+	// render initial state
 	renderTemplate( buttonContainer, headShotTemplate() )
 
 
@@ -90,7 +92,7 @@ var celebs = [
 		"occupation": "Current job",
 		"firstJob": "First job",
 		"quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate recusandae ut impedit perspiciatis, dolore eum, voluptatem deleniti expedita nobis nesciunt qui, corrupti soluta! Unde, nemo eligendi eum, ea vel quo?"
-	}
+	},
 	
 ]
 
