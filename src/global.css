@@ -1,0 +1,119 @@
+
+.gridContainer{
+	display:block;
+	}
+.ndi-header{
+	display:block;
+	font-family:"Guardian Sans Cond", Georgia, sans-serif;
+	font-weight:700;
+	font-size:22px;
+	line-height:22px;
+	color:#000000;
+	}
+.ndi-interactive-container{
+	display:block;
+	}
+#ndi-btn-container{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	}
+.ndi-btn{
+	position:relative;
+	min-width: 30%;
+	flex-grow: 1;
+	align-self: flex-start;
+	height:242px;
+	}
+.ndi-btn:hover{
+	cursor:pointer;
+	}
+.ndi-btn-image{
+	display:block;
+	height:162px;
+	background-image:url(images/image1.jpg);
+	background-repeat:no-repeat;
+  	background-position:top;
+  	background-size:cover;
+	margin:0 0 0 0;
+	}
+.ndi-btn-name-holder{
+	display:block;
+	margin:6px 10px 10px 10px;
+	}
+.ndi-btn-name{
+	display:block;
+	font-family:"Guardian Sans Cond", Georgia, sans-serif;
+	font-weight:700;
+	font-size:16px;
+	line-height:16px;
+	color:#000000;
+	text-align:center;
+	text-transform:uppercase;
+	}
+.ndi-credentials{
+	font-family:"Guardian Sans", Georgia, sans-serif;
+	font-weight:300;
+	font-size:16px;
+	line-height:16px;
+	color:#000000;
+	text-align:center;
+	text-transform:uppercase;
+	}
+#ndi-panel-container{
+	display:block;
+	text-align:center;
+	}
+.ndi-panel{
+	position:relative;
+	display:inline-block;
+	max-width:488px;
+	background-color:rgba(0,0,0,0.85);
+	}
+.ndi-panel-image{
+	display:block;
+	margin:40px 40px 0 40px;
+	height:408px;
+	background-image:url(images/image1.jpg);
+	background-repeat:no-repeat;
+  	background-position:top;
+  	background-size:cover;
+	}
+.ndi-panel-text-holder{
+	display:block;
+	margin:0 40px 40px 40px;
+	padding:20px;
+	background-color:rgba(255,255,255,1.00);
+	}
+.ndi-panel-name{
+	display:block;
+	font-family:"Guardian Sans", Georgia, sans-serif;
+	font-weight:700;
+	font-size:20px;
+	line-height:20px;
+	color:#000000;
+	text-align:center;
+	text-transform:uppercase;
+	margin:0 0 10px 0;
+	}
+.ndi-panel-text{
+	font-family:"Guardian Sans", Georgia, sans-serif;
+	font-weight:300;
+	font-size:16px;
+	line-height:18px;
+	color:#000000;
+	text-align:left;
+	}
+.ndi-panel-close-icon{
+	display:block;
+	position:absolute;
+	right:40px;
+	top:448px;
+	width:40px;
+	height:40px;
+	background-color:rgba(255,0,4,1.00);
+	background-image:url(images/nav_small_close.svg);
+	}

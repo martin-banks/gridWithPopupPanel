@@ -1,0 +1,19 @@
+{
+  "name": "grid_with_popup_panel",
+  "version": "1.0.0",
+  "description": "Simple grid of images and titles that display a popup panel with more information when clicked/taped",
+  "main": "app.js",
+  "scripts": {
+    "test": "http-server -p 3000 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-banks/gridWithPopupPanel.git"
+  },
+  "author": "Martin Banks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-banks/gridWithPopupPanel/issues"
+  },
+  "homepage": "https://github.com/martin-banks/gridWithPopupPanel#readme"
+}
