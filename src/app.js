@@ -1,29 +1,8 @@
 (()=>{
 
 	var state= {
-		"celebs":[
-			{
-				"name": "Celeb name",
-				"image": "image1.jpg",
-				"occupation": "Current job",
-				"quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate recusandae ut impedit perspiciatis, dolore eum, voluptatem deleniti expedita nobis nesciunt qui, corrupti soluta! Unde, nemo eligendi eum, ea vel quo?"
-
-			},
-			{
-				"name": "Celeb name",
-				"image": "image1.jpg",
-				"occupation": "Current job",
-				"quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate recusandae ut impedit perspiciatis, dolore eum, voluptatem deleniti expedita nobis nesciunt qui, corrupti soluta! Unde, nemo eligendi eum, ea vel quo?"
-
-			},
-			{
-				"name": "Celeb name",
-				"image": "image1.jpg",
-				"occupation": "Current job",
-				"quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate recusandae ut impedit perspiciatis, dolore eum, voluptatem deleniti expedita nobis nesciunt qui, corrupti soluta! Unde, nemo eligendi eum, ea vel quo?"
-
-			}
-		]
+		"celebs": require('./content.js')
+		
 	}
 
 	var imagePath = '../images/';

@@ -4,7 +4,10 @@
   "description": "Simple grid of images and titles that display a popup panel with more information when clicked/taped",
   "main": "app.js",
   "scripts": {
-    "test": "http-server -p 3000 -o"
+    "test": "http-server -p 3000 -o",
+    "build": "browserify ./src/app.js -o ./dest/app.js -t [ babelify --presets [es2015] ] && cp ./src/*.html ./dest && cp ./src/*.css ./dest",
+    "watch": "watchify ./src/*.js -o ./dest/app.js",
+    "ugly": "uglifyjs ./dest/app.js -o ./dest/app.min.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/martin-banks/gridWithPopupPanel/issues"
   },
-  "homepage": "https://github.com/martin-banks/gridWithPopupPanel#readme"
+  "homepage": "https://github.com/martin-banks/gridWithPopupPanel#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "watchify": "^3.7.0"
+  }
 }
